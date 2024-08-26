@@ -3,6 +3,8 @@
 #include <iostream>
 #include <vector>
 
+int total_pages_used;
+
 MemoryManager::MemoryManager(int total_pages) {
     totalPages = total_pages;
     for (int i = 0; i < totalPages; ++i) {
