@@ -27,9 +27,9 @@ The Memory Management System project is designed to simulate memory allocation a
 
 The project uses the following trace files to simulate memory operations:
 
-- **`tracefile_1KB_8GB_16GB.txt`**: For a 1KB page size, 8GB virtual and 16GB physical memory.
-- **`tracefile_2KB_4GB_8GB.txt`**: For a 2KB page size, 4GB virtual memory, and 8GB physical memory.
-- **`tracefile_4KB_4GB_4GB.txt`**: 4KB page size, 4GB virtual memory, and 4GB physical memory.
+- **`tracefile_1KB_8GB_16GB.txt`**: For a 1KB page size, 8GB physical memory and 16GB virtual memory.
+- **`tracefile_2KB_4GB_8GB.txt`**: For a 2KB page size, 4GB physical memory, and virtual memory.
+- **`tracefile_4KB_4GB_4GB.txt`**: 4KB page size, 4GB physical memory, and 4GB virtual memory.
 
 ## Compilation
 
