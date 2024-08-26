@@ -1,10 +1,8 @@
-
 #include "Task.h"
 #include "MemoryManager.h"
 #include "IOManager.h"
 
 // IOManager Class functions
-
 // The function processTraceFile reads the trace file and processes the requests
 // It takes the trace file and the tasks as input
 // It reads the trace file line by line and processes the requests
@@ -13,7 +11,7 @@
 // It converts the size to pages and requests memory for each page
 // It prints error messages for invalid task identifier and invalid hexadecimal address
 // It prints error message for malformed line
-
+extern int total_pages_used;
 extern std::map<std::string, Task*> tasks;
 extern int current_page_size; // Current page size as per Trace file input
 extern MemoryManager memManager;
@@ -78,6 +76,8 @@ extern MemoryManager memManager;
                 if(sizeInKB % current_page_size != 0) {
                     pagesRequired++;
                 }
+
+                total_pages_used += pagesRequired;
 
                 int startingLogicalAddress = logicalAddress/current_page_size;
                 // Request memory for each page
