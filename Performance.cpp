@@ -1,5 +1,8 @@
 #include "Performance.h"
 
+extern int total_pages_used;
+extern int current_page_size;
+
 
 Performance::Performance() {
     start_time = 0;
@@ -45,6 +48,7 @@ void Performance::printExecutionTimes(){
 }
 
 void Performance::printTotalMemoryUsage(){
+    TotalMemoryUsage=total_pages_used*current_page_size;
     std::cout << "Total Memory Usage: " << TotalMemoryUsage << " bytes" << std::endl;
 }
 
